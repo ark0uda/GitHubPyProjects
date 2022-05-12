@@ -11,7 +11,3 @@ def rot13(m):
     lst1 = [ord(str(m[i])) for i in range(len(m))]
     lst2 = list(map(lambda x: x if x < 65 else x + 13 if x < 78 else x - 13 if x < 91 else x + 13 if x < 110 else x - 13 if x < 123 else x, lst1))
     return ''.join([chr(lst2[x]) for x in range(len(lst2))])
-
-
-
-
